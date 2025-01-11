@@ -4,16 +4,16 @@ from typing import List, Dict, Optional
 from datetime import datetime, timedelta, date
 import random
 import logging
-from ..schemas.responses import (
+from schemas.responses import (
     TransportOption, TransportResponse, WeatherResponse,
     Activity, Meal, Transport, Accommodation, WeatherInfo,
     WeatherSummary, EstimatedCosts, LocalEvent, DailyItinerary,
     TripSummary, ItineraryResponse
 )
-from ..agents.transport_agent import TransportAgent
-from ..agents.weather_agent import WeatherAgent
-from ..agents.itinerary_generator_agent import ItineraryGeneratorAgent
-from ..schemas.inputs import TravelInput, UserPreferences
+from agents.transport_agent import TransportAgent
+from agents.weather_agent import WeatherAgent
+from agents.itinerary_generator_agent import ItineraryGeneratorAgent
+from schemas.inputs import TravelInput, UserPreferences
 import os
 import json
 
