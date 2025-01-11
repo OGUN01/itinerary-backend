@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from src.routers import itinerary
+from routers import itinerary
 
 app = FastAPI(
     title="Travel Itinerary API",
@@ -27,7 +27,7 @@ app = FastAPI(
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origins
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -49,9 +49,6 @@ async def global_exception_handler(request: Request, exc: Exception):
             }
         }
     )
-
-# Import and include routers
-from .routers import itinerary
 
 # Add routers
 app.include_router(itinerary.router, prefix="/api")
