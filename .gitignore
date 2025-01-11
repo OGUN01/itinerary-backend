@@ -34,4 +34,21 @@ ENV/
 
 # Logs
 *.log
-logs/ 
+logs/
+
+# Node (in case of any Node.js tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage and test reports
+.coverage
+htmlcov/
+.pytest_cache/
+coverage/
+.tox/
+
+# OS
+.DS_Store
+Thumbs.db 
