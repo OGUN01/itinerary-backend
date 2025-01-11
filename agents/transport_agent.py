@@ -4,8 +4,8 @@ import os
 import json
 from datetime import datetime, timedelta
 import logging
-from ..schemas.inputs import TravelInput
-from ..schemas.responses import TransportOption, TransportResponse
+from schemas.inputs import TravelInput
+from schemas.responses import TransportOption, TransportResponse
 import re
 
 logger = logging.getLogger(__name__)

@@ -3,8 +3,8 @@ from typing import List, Dict
 import os
 import logging
 from datetime import datetime, date
-from ..schemas.inputs import TravelInput
-from ..schemas.responses import WeatherInfo, LocalEvent, WeatherResponse
+from schemas.inputs import TravelInput
+from schemas.responses import WeatherInfo, LocalEvent, WeatherResponse
 import asyncio
 import re
 from urllib.parse import quote

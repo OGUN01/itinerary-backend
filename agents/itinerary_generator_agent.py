@@ -4,8 +4,8 @@ import os
 import json
 import logging
 from datetime import datetime, timedelta
-from ..schemas.inputs import TravelInput, UserPreferences
-from ..schemas.responses import (
+from schemas.inputs import TravelInput, UserPreferences
+from schemas.responses import (
     WeatherInfo, LocalEvent, DailyItinerary,
     ItineraryResponse, WeatherResponse, RouteStop,
     Activity, Meal, Transport, Accommodation,
